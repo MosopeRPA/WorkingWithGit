@@ -1,0 +1,213 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ChromePractice" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1130.4,2887.2" sap2010:WorkflowViewState.IdRef="ChromePractice_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ChromePractice" sap:VirtualizedContainerService.HintSize="545.6,2822.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: UiPath Academy" sap:VirtualizedContainerService.HintSize="483.2,2710.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="69814381-3df7-4465-92c5-19a3287d1eea" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,2493.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="FirstResult" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'New Tab'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="69814381-3df7-4465-92c5-19a3287d1eea" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvTextArea="933, 20, 18, 18" CvTextArgument="+" CvType="Text" DesignTimeRectangle="926, 9, 46, 44" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'New Tab'" FullSelectorArgument="&lt;ctrl name='UiPath Academy - Memory usage - 341 MB - Google Chrome - sope (M*' role='pane' /&gt;&lt;ctrl name='New Tab' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='UiPath Academy - Memory usage - 341 MB - Google Chrome - sope (M*' role='pane' /&gt;&lt;ctrl name='New Tab' role='push button' automationid='' check:text='New Tab' /&gt;" Guid="c8447395-8d89-4658-805f-9729197035f3" InformativeScreenshot="3fa0785a5cc9725ad425d98af8cb5136.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='UiPath Academy - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="103, 64, 25, 25" CvType="Icon" DesignTimeRectangle="99, 60, 35, 36" ElementType="Button" FriendlyName="'Reload'" FullSelectorArgument="&lt;ctrl name='UiPath Academy - Memory usage - 341 MB - Google Chrome - sope (M*' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='UiPath Academy - Memory usage - 341 MB - Google Chrome - sope (M*' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' automationid='' check:text='Reload' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACcAAAAoCAYAAAB99ePgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAI0SURBVFhH7dbLSxtRFMfx/hFBBAVBN6KCCpq68LVxp+K2pd3oRnduBBWpgSbE2jamvjpuitrWRSn4KFqKj4p9rIxCpS+aWJNak8bU1tr9r9wDMzR6MjrXDLi4i+8ic+7MfCDzutTpcOCipnCyKZxsCiebwsmmcLKlDecuKMBgXR08RUXsXK8nO5vdznUu3M38fLy468PulyAOj/4axcIRrI6N4U5FRdL65aFh3K+vT9pmljRuqq0NP/cThImGwwjMzBJ0fXoGkU+fDejy4BB6srLwZmKSftuOW/B46EShzU1oDQ3sGq2xEbvBEK2LRb4ZWFtxU62tdJJgYAM3cnLYNXp9paVI/IgbMFtxXRkZ9JcdHPzC7cvJ1xPXov9eEsxWnDiwOMHr8Ql2/n+rmnYCJrINp19rk83N7FzPV1mJebebra+khN2HyxJOPB4ELtVNkO4s4RYH/IQbv3adnac7S7inHR2Ee+71svNUibu63+lkZ2ZZwvWXOwm38/4DujMz2TXHc+Xl0fMuHo2xc7Ms4UQbc88IONfrYufH098ML0dH2blZlnHe4mLE96L4/eeIHsjcGr2V4RGC7W1/hSs3l11jlmWcSGtqMp78W0tLeNLeDn9NDX1x3Corw8OWFgTXAzT/HtrGQHU1e5zTksKJ/LW19AoTgFSJjwFPYSG7/1mSxuk9uHIVbx89xs67LSTi+/i49oq+RHxVVex6K50bZ2cKJ5vCyaZwsimcbAon2wXGOfAPH9Ws5KofUGYAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBefore="0.5" DisplayName="Type Into 'editable text'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="69814381-3df7-4465-92c5-19a3287d1eea" Text="How to Create a Computer Virus" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="226, 59, 1337, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;ctrl name='New Tab - Memory usage - 69.1 MB - Google Chrome - sope (Mosope *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Memory usage - 69.1 MB - Google Chrome - sope (Mosope *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="c1af7e8c-8ac8-4ff9-a3eb-daad9811b4e2" InformativeScreenshot="60ef554a65cd682567478f94dbb90367.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="99, 60, 35, 36" ElementType="Button" FriendlyName="'Reload'" FullSelectorArgument="&lt;ctrl name='New Tab - Memory usage - 69.1 MB - Google Chrome - sope (Mosope *' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Memory usage - 69.1 MB - Google Chrome - sope (Mosope *' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' automationid='' check:text='Reload' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="5" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="387.2,178.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="3" DelayBefore="3" DisplayName="Click 'How to'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="69814381-3df7-4465-92c5-19a3287d1eea" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.google.com/search?q=how+to+create+a+computer+virus&amp;oq=How+to+Create+a+Computer+Virus&amp;gs_lcrp=EgZjaHJvbWUqCwgAEEUYJxg7GIoFMgsIABBFGCcYOxiKBTIKCAEQRRgWGB4YOzIHCAIQABiABDIHCAMQABiABDIKCAQQABjHAxiABDIHCAUQABiABDIICAYQABgWGB4yCAgHEAAYFhgeMggICBAAGBYYHjIICAkQABgWGB7SAQgyMTgxajBqN6gCALACAA&amp;sourceid=chrome&amp;ie=UTF-8" DesignTimeRectangle="253, 380, 508, 39" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'How to'" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='LC20lb MBeuO DKV0Md' aaname='How to Create a Virus: 9 Steps (with Pictures)' check:innerText='How to Create a Virus: 9 Steps (with Pictures)' /&gt;" Guid="6169c7e1-db41-4d81-9fcd-444257f8c2f6" InformativeScreenshot="b998c60f0db2875d1bed02895220db2f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='how to create a computer virus - Google Search' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="58, 150, 115, 38" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='IMG' type='' class='jfN4p' aaname='Google' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="4" DisplayName="Click 'Open link in new tab'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_8" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="69814381-3df7-4465-92c5-19a3287d1eea" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="35, 19, 328, 30" DesignTimeScaleFactor="1.25" FriendlyName="'Open link in new tab'" FullSelectorArgument="&lt;ctrl name='Open link in new tab' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Open link in new tab' role='menu item' automationid='' check:text='Open link in new tab' /&gt;" Guid="498828e2-9917-44ac-a77a-fe8db3b18af3" InformativeScreenshot="d0fdc7f9d2b499b28c09f5f60a67cfaa.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' idx='*' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NGetText DisplayName="Get Text 'How to Create a Virus'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="69814381-3df7-4465-92c5-19a3287d1eea" TextString="[FirstResult]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.wikihow.com/Create-a-Virus" DesignTimeRectangle="335, 452, 845, 281" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Have you'" FullSelectorArgument="&lt;webctrl parentid='mf-section-0' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='mf-section-0' tag='P' type='' class='' /&gt;" Guid="60248cce-7492-4996-97b7-c827548847c1" InformativeScreenshot="6c57e3877835c458f79971aaaf1e537b.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='How to Create a Virus: 9 Steps (with Pictures) - wikiHow' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="335, 295, 451, 49" ElementType="Text" FriendlyName="'How to Create a Virus'" FullSelectorArgument="&lt;webctrl parentid='section_0' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='section_0' tag='A' type='' class='' aaname='How to Create a Virus' check:innerText='How to Create a Virus' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'New Tab'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="69814381-3df7-4465-92c5-19a3287d1eea" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1225, 9, 46, 44" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'New Tab'" FullSelectorArgument="&lt;ctrl name='how to create a computer virus - Google Search - Memory usage - *' role='pane' /&gt;&lt;ctrl name='New Tab' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='how to create a computer virus - Google Search - Memory usage - *' role='pane' /&gt;&lt;ctrl name='New Tab' role='push button' automationid='' check:text='New Tab' /&gt;" Guid="7133b99a-2c59-4c0c-bc5a-4d89139d27bf" InformativeScreenshot="5b699079805db3d2d02ea9e3e6e2f6d9.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='how to create a computer virus - Google Search - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="905, 9, 321, 44" ElementType="TabPage" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='how to create a computer virus - Google Search - Memory usage - *' role='pane' /&gt;&lt;ctrl name='how to create a computer virus - Google Search - Memory usage - *' role='page tab' /&gt;" FuzzySelectorArgument="&lt;ctrl name='how to create a computer virus - Google Search - Memory usage - *' role='pane' /&gt;&lt;ctrl name='how to create a computer virus - Google Search - Memory usage - *' role='page tab' automationid='' check:fulltext='Close' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DelayBefore="0.5" DisplayName="Type Into 'editable text'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="69814381-3df7-4465-92c5-19a3287d1eea" Text="https://chat.openai.com" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="226, 59, 1337, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;ctrl name='New Tab - Memory usage - 65.7 MB - Google Chrome - sope (Mosope *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Memory usage - 65.7 MB - Google Chrome - sope (Mosope *' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="8d6e1e82-7398-4af1-a14e-07ad0a69f75b" InformativeScreenshot="343c3455d75a7715723580527b2d89ef.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="99, 60, 35, 36" ElementType="Button" FriendlyName="'Reload'" FullSelectorArgument="&lt;ctrl name='New Tab - Memory usage - 65.7 MB - Google Chrome - sope (Mosope *' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Memory usage - 65.7 MB - Google Chrome - sope (Mosope *' role='pane' /&gt;&lt;ctrl name='Reload' role='push button' automationid='' check:text='Reload' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="10" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="387.2,178.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" InteractionMode="SameAsCard" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ChatGPT'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="387.2,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="69814381-3df7-4465-92c5-19a3287d1eea" Text="[&quot;Generate a summary of &quot; + FirstResult]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://chat.openai.com/" DesignTimeRectangle="652, 977, 958, 70" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'TEXTAREA prompt-textarea'" FullSelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='prompt-textarea' tag='TEXTAREA' type='' class='m-0 w-full resize-none border-0 bg-transparent py-[10px] pr-10 focus:ring-0 focus-visible:ring-0 dark:bg-transparent md:py-4 md:pr-12 gizmo:md:py-3.5 gizmo:placeholder-black/50 gizmo:dark:placeholder-white/50 pl-3 md:pl-4' aaname='' /&gt;" Guid="610bd51b-37fd-494a-9007-c6815787d1e8" InformativeScreenshot="90c5ac95cfd92ba485a29f6267cc88f7.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='ChatGPT' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="334, 282, 1595, 332" ElementType="Text" FriendlyName="'ChatGPT'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' class='text-4xl font-semibold text-center text-gray-200 dark:text-gray-600 ml-auto mr-auto mb-10 sm:mb-16 flex gap-2 items-center justify-center flex-grow' aaname='ChatGPT' check:innerText='ChatGPT' /&gt;" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="387.2,178.4" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1098" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="d1f9acb0836cbe7357383ad007b60848.jpg" Selector="&lt;html app='chrome.exe' title='UiPath Academy' /&gt;" Title="UiPath Academy" Url="https://academy.uipath.com/learningpath-viewer/8253/1/507131/2" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
